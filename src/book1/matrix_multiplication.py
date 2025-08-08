@@ -27,3 +27,10 @@ B = np.array([[1, 3, 1],
               [4, 0, -2]])
 C = A @ B
 print(C)
+
+A = np.array([[3, 5],
+              [-1, 1]])
+B = np.array([[-2, 2, 3],
+             [3, 5, -2]])
+C = A @ B
+print(C)
