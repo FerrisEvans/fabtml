@@ -39,3 +39,8 @@ A = np.array([[8, 8, 6]])
 B = np.array([[5, 2], [1, 3], [6, 5]])
 C = A @ B
 print(C)
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+C = A @ B
+print(C)
