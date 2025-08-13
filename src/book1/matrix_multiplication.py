@@ -50,3 +50,10 @@ B = np.array([[2, -1, 3], [1, 0, 4]])
 C = np.array([[1, -1], [2, 3], [-1, 2]])
 D = A @ B @ C
 print(D)
+
+A = np.array([[-2, 4],
+              [1, -2]])
+B = np.array([[2, 4],
+              [-3, -6]])
+C = A @ B
+print(C)
