@@ -5,16 +5,15 @@ from matplotlib.patches import Circle
 from matplotlib.patheffects import withStroke
 from matplotlib.ticker import AutoMinorLocator, MultipleLocator
 
-royal_blue = [0, 20/256, 82/256]
-
+royal_blue = [0, 20 / 256, 82 / 256]
 
 # make the figure
 
 np.random.seed(19680801)
 
 X = np.linspace(0.5, 3.5, 100)
-Y1 = 3+np.cos(X)
-Y2 = 1+np.cos(1+X/0.75)/2
+Y1 = 3 + np.cos(X)
+Y2 = 1 + np.cos(1 + X / 0.75) / 2
 Y3 = np.random.uniform(Y1, Y2, len(X))
 
 fig = plt.figure(figsize=(7.5, 7.5))
@@ -61,13 +60,13 @@ def annotate(x, y, text, code):
     # path_effects cannot clip other texts
     for path_effects in [[withStroke(linewidth=7, foreground='white')], []]:
         color = 'white' if path_effects else royal_blue
-        ax.text(x, y-0.2, text, zorder=100,
+        ax.text(x, y - 0.2, text, zorder=100,
                 ha='center', va='top', weight='bold', color=color,
                 style='italic', fontfamily='monospace',
                 path_effects=path_effects)
 
         color = 'white' if path_effects else 'black'
-        ax.text(x, y-0.33, code, zorder=100,
+        ax.text(x, y - 0.33, code, zorder=100,
                 ha='center', va='top', weight='normal', color=color,
                 fontfamily='monospace', fontsize='medium',
                 path_effects=path_effects)
