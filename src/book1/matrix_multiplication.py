@@ -62,3 +62,10 @@ A = np.array([[1, 2], [3, 4], [5, 1]])
 B = np.array([[2], [4]])
 C = A @ B
 print(C)
+
+A = np.array([[1, 1],
+              [2, 4]])
+B = np.array([[2, -0.5],
+              [-1, 0.5]])
+C = A @ B
+print(C)
